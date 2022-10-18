@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tip Calculator App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Tip Calculator App</h1>
+      <main class="flex">
+        <section class="left">
+          <div class="bill">
+            <h2>Bill</h2>
+            <p>€ <input type="number" id="bill_amount" placeholder="0" /></p>
+          </div>
+          <div class="tip_percentage">
+            <h2>Select Tip %</h2>
+            <button class="btn"><span id="five">5</span> %</button>
+            <button class="btn"><span id="ten">10</span> %</button>
+            <button class="btn"><span id="fifteen">15</span> %</button>
+            <button class="btn"><span id="twenty">20</span> %</button>
+            <span id="custom"
+              ><input type="number" placeholder="custom %"
+            /></span>
+          </div>
+        </section>
+        <section class="right">
+          <div class="tip_amount">
+            <h2>Tip Amount</h2>
+            <p>€ <span id="tip_amount">0.00</span></p>
+          </div>
+          <div class="total_bill">
+            <h2>Total Bill</h2>
+            <p>€ <span id="total_bill">0.00</span></p>
+          </div>
+        </section>
+      </main>
+      <button class="btn" id="reset">Reset</button>
+    </div>
+  </body>
+</html>

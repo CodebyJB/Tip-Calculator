@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(img/bgTip.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+}
+body,
+button,
+input {
+  font-family: "Space Mono", monospace, Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  max-width: 40rem;
+  margin: 10vw auto;
+  padding: 3rem;
+  background-color: rgba(124, 124, 123, 0.411);
+}
+h1 {
+  text-decoration: underline;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+.left,
+.right {
+  flex-basis: 50%;
+  min-width: 10rem;
+  max-width: 20rem;
+}
+#bill_amount,
+#custom > input {
+  text-align: end;
+  padding-right: 0.5rem;
+}
+#custom > input {
+  max-width: 5rem;
+}
+#bill_amount,
+#custom > input,
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.25rem;
+}
+#reset {
+  width: 5rem;
+  margin: 3rem 0;
+}
