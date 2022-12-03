@@ -10,15 +10,17 @@ body {
   background-position: center center;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 body,
 button,
 input {
   font-family: "Space Mono", monospace, Arial, Helvetica, sans-serif;
+  padding: 0 0.25rem;
 }
 .wrapper {
   max-width: 40rem;
-  margin: 10vw auto;
+  margin: 20vh auto;
   padding: 3rem;
   background-color: rgba(124, 124, 123, 0.411);
 }
@@ -44,9 +46,7 @@ h1 {
 #custom > input {
   text-align: end;
   padding-right: 0.5rem;
-}
-#custom > input {
-  max-width: 5rem;
+  max-width: 7rem;
 }
 #bill_amount,
 #custom > input,
@@ -58,4 +58,12 @@ button {
 #reset {
   width: 5rem;
   margin: 3rem 0;
+}
+.percent::after {
+  content: " %";
+}
+button:hover,
+button:focus {
+  background-color: #000;
+  color: white;
 }
